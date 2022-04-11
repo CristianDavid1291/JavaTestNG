@@ -10,7 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class VerifyTitleTest {
 	
 	@Test
-	public void titleTest() {
+	public void titleTest() throws InterruptedException {
 		
 		String titleExpected = "Artículos electrónicos, asdsda autos, ropa, objetos de colección, cupones y más | eBay";		
 		WebDriverManager.chromedriver().setup();
