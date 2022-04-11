@@ -1,10 +1,14 @@
-package Common;
+package common;
+
+import java.io.IOException;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class Listeners implements ITestListener {
+import utilities.testUtils;
+
+public class Listeners extends testUtils implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
@@ -19,6 +23,12 @@ public class Listeners implements ITestListener {
 
 	public void onTestFailure(ITestResult result) {
 		System.out.println("Test case failed - screenshot captured");
+		try {
+			getScreenshot();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 
