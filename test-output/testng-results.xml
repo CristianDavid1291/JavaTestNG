@@ -1,169 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-11T11:12:00 COT" name="UITest" finished-at="2022-04-11T11:12:06 COT" duration-ms="5952">
+  <suite started-at="2022-04-11T14:56:58 COT" name="Default suite" finished-at="2022-04-11T14:56:58 COT" duration-ms="42">
     <groups>
-      <group name="bvt">
-        <method signature="GroupsDemoTest.aTest3()[pri:2, instance:ui.GroupsDemoTest@15eb5ee5]" name="aTest3" class="ui.GroupsDemoTest"/>
-        <method signature="GroupsDemoTest.aTest4()[pri:2, instance:ui.GroupsDemoTest@15eb5ee5]" name="aTest4" class="ui.GroupsDemoTest"/>
-      </group> <!-- bvt -->
-      <group name="regression">
-        <method signature="GroupsDemoTest.aTest1()[pri:1, instance:ui.GroupsDemoTest@15eb5ee5]" name="aTest1" class="ui.GroupsDemoTest"/>
-        <method signature="GroupsDemoTest.aTest2()[pri:2, instance:ui.GroupsDemoTest@15eb5ee5]" name="aTest2" class="ui.GroupsDemoTest"/>
-        <method signature="GroupsDemoTest.aTest3()[pri:2, instance:ui.GroupsDemoTest@15eb5ee5]" name="aTest3" class="ui.GroupsDemoTest"/>
-      </group> <!-- regression -->
     </groups>
-    <test started-at="2022-04-11T11:12:00 COT" name="Functional Testing" finished-at="2022-04-11T11:12:06 COT" duration-ms="5952">
-      <class name="ui.VerifyTitleTest">
-        <test-method signature="titleTest()[pri:0, instance:ui.VerifyTitleTest@72f926e6]" started-at="2022-04-11T11:12:03 COT" name="titleTest" finished-at="2022-04-11T11:12:06 COT" duration-ms="2531" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The titles are not the same expected [Artículos electrónicos, asdsda autos, ropa, objetos de colección, cupones y más | eBay] but found [Artículos electrónicos, autos, ropa, objetos de colección, cupones y más | eBay]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The titles are not the same expected [Artículos electrónicos, asdsda autos, ropa, objetos de colección, cupones y más | eBay] but found [Artículos electrónicos, autos, ropa, objetos de colección, cupones y más | eBay]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at ui.VerifyTitleTest.titleTest(VerifyTitleTest.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+    <test started-at="2022-04-11T14:56:58 COT" name="Default test" finished-at="2022-04-11T14:56:58 COT" duration-ms="42">
+      <class name="ui.DataProviderDemoTest">
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@76908cc0]" started-at="2022-04-11T14:56:58 COT" name="test" data-provider="data1" finished-at="2022-04-11T14:56:58 COT" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- titleTest -->
-      </class> <!-- ui.VerifyTitleTest -->
-      <class name="ui.GroupsDemoTest">
-        <test-method signature="aTest1()[pri:1, instance:ui.GroupsDemoTest@15eb5ee5]" started-at="2022-04-11T11:12:03 COT" name="aTest1" finished-at="2022-04-11T11:12:03 COT" duration-ms="0" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@76908cc0]" started-at="2022-04-11T14:56:58 COT" name="test" data-provider="data1" finished-at="2022-04-11T14:56:58 COT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass2]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aTest1 -->
-        <test-method signature="aTest2()[pri:2, instance:ui.GroupsDemoTest@15eb5ee5]" started-at="2022-04-11T11:12:03 COT" name="aTest2" finished-at="2022-04-11T11:12:03 COT" duration-ms="1" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@76908cc0]" started-at="2022-04-11T14:56:58 COT" name="test" data-provider="data1" finished-at="2022-04-11T14:56:58 COT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass3]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aTest2 -->
-        <test-method signature="aTest3()[pri:2, instance:ui.GroupsDemoTest@15eb5ee5]" started-at="2022-04-11T11:12:03 COT" name="aTest3" finished-at="2022-04-11T11:12:03 COT" duration-ms="1" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@76908cc0]" started-at="2022-04-11T14:56:58 COT" name="test" data-provider="data1" finished-at="2022-04-11T14:56:58 COT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass4]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aTest3 -->
-        <test-method signature="aTest4()[pri:2, instance:ui.GroupsDemoTest@15eb5ee5]" started-at="2022-04-11T11:12:03 COT" name="aTest4" finished-at="2022-04-11T11:12:03 COT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aTest4 -->
-      </class> <!-- ui.GroupsDemoTest -->
-      <class name="ui.LoginTest">
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:ui.LoginTest@4f209819]" started-at="2022-04-11T11:12:00 COT" name="loginToApplication" finished-at="2022-04-11T11:12:00 COT" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApplication -->
-        <test-method is-config="true" signature="connectToDB()[pri:0, instance:ui.LoginTest@4f209819]" started-at="2022-04-11T11:12:03 COT" name="connectToDB" finished-at="2022-04-11T11:12:03 COT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- connectToDB -->
-        <test-method signature="aTest1()[pri:1, instance:ui.LoginTest@4f209819]" started-at="2022-04-11T11:12:03 COT" name="aTest1" description="This is a login test" finished-at="2022-04-11T11:12:03 COT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aTest1 -->
-        <test-method is-config="true" signature="connectToDB()[pri:0, instance:ui.LoginTest@4f209819]" started-at="2022-04-11T11:12:03 COT" name="connectToDB" finished-at="2022-04-11T11:12:03 COT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="disconnectFromDB()[pri:0, instance:ui.LoginTest@4f209819]" started-at="2022-04-11T11:12:03 COT" name="disconnectFromDB" finished-at="2022-04-11T11:12:03 COT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disconnectFromDB -->
-        <test-method signature="aTest2()[pri:2, instance:ui.LoginTest@4f209819]" started-at="2022-04-11T11:12:03 COT" name="aTest2" description="This is a logOut test" finished-at="2022-04-11T11:12:03 COT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aTest2 -->
-        <test-method is-config="true" signature="disconnectFromDB()[pri:0, instance:ui.LoginTest@4f209819]" started-at="2022-04-11T11:12:03 COT" name="disconnectFromDB" finished-at="2022-04-11T11:12:03 COT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disconnectFromDB -->
-        <test-method is-config="true" signature="logOutToApplication()[pri:0, instance:ui.LoginTest@4f209819]" started-at="2022-04-11T11:12:06 COT" name="logOutToApplication" finished-at="2022-04-11T11:12:06 COT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutToApplication -->
-      </class> <!-- ui.LoginTest -->
-      <class name="ui.VerifyTitleAndText">
-        <test-method signature="titleTest()[pri:0, instance:ui.VerifyTitleAndText@48e4374]" started-at="2022-04-11T11:12:00 COT" name="titleTest" finished-at="2022-04-11T11:12:03 COT" duration-ms="3373" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Title verification failed expected [Artículos electrónicos, arr autos, ropa, objetos de colección, cupones y más | eBay] but found [Artículos electrónicos, autos, ropa, objetos de colección, cupones y más | eBay]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Title verification failed expected [Artículos electrónicos, arr autos, ropa, objetos de colección, cupones y más | eBay] but found [Artículos electrónicos, autos, ropa, objetos de colección, cupones y más | eBay]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at ui.VerifyTitleAndText.titleTest(VerifyTitleAndText.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- titleTest -->
-      </class> <!-- ui.VerifyTitleAndText -->
-    </test> <!-- Functional Testing -->
-  </suite> <!-- UITest -->
+        </test-method> <!-- test -->
+      </class> <!-- ui.DataProviderDemoTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
