@@ -3,7 +3,6 @@ package ui;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
@@ -13,8 +12,8 @@ public class DataProviderDemoTest {
 	
 
 	
-	@Test(dataProvider = "data1")
-	public void test(String username,String password) throws InterruptedException {
+	@Test(dataProvider = "data1",dataProviderClass = DataProviderDemo.class)
+	public void test1(String username,String password) throws InterruptedException {
 		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
@@ -25,18 +24,12 @@ public class DataProviderDemoTest {
 		driver.close();
 		
 	}
-	
-	
-	@DataProvider(name= "data1")
-	public Object[][] dataSet1() {
-		
-		return new Object[][] {
-			{"standard_user","secret_sauce"},
-			{"performance_glitch_user","secret_sauce"},
-			{"problem_user","secret_sauce"},
-			{"locked_out_user","secret_sauce"}
-		};
 
+	@Test(dataProvider = "data1",dataProviderClass = DataProviderDemo.class)
+	public void test2(String username,String password,String message){
+	
+		System.out.println(username+"===="+password+"===="+message);
+	
 	}
 
 }
