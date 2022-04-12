@@ -7,7 +7,7 @@
 	</listeners>
 	<test name="Listener Test">
 		<classes>
-			<class name="ui.ListenerDemoTest" />
+			<class name="ui.ReportTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

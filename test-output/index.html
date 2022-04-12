@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Group_Demo" class="navigator-link">
-              <span class="suite-name border-failed">Group Demo</span>
+              <span class="suite-name border-passed">Group Demo</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,45 +93,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,  3 skipped,  </span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Group_Demo" class="hide-methods failed suite-Group_Demo"> (hide)</a> <!-- hide-methods failed suite-Group_Demo -->
-                      <a href="#" panel-name="suite-Group_Demo" class="show-methods failed suite-Group_Demo"> (show)</a> <!-- show-methods failed suite-Group_Demo -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Group_Demo" class="hide-methods passed suite-Group_Demo"> (hide)</a> <!-- hide-methods passed suite-Group_Demo -->
+                      <a href="#" panel-name="suite-Group_Demo" class="show-methods passed suite-Group_Demo"> (show)</a> <!-- show-methods passed suite-Group_Demo -->
                     </span>
-                    <div class="method-list-content failed suite-Group_Demo">
+                    <div class="method-list-content passed suite-Group_Demo">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Group_Demo" title="ui.ListenerDemoTest" class="method navigator-link" hash-for-method="launchApp">launchApp</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Group_Demo -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Retried methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Group_Demo" class="hide-methods skipped suite-Group_Demo"> (hide)</a> <!-- hide-methods skipped suite-Group_Demo -->
-                      <a href="#" panel-name="suite-Group_Demo" class="show-methods skipped suite-Group_Demo"> (show)</a> <!-- show-methods skipped suite-Group_Demo -->
-                    </span>
-                    <div class="method-list-content skipped suite-Group_Demo">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Group_Demo" title="ui.ListenerDemoTest" class="method navigator-link" hash-for-method="launchApp">launchApp</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Group_Demo" title="ui.ReportTest" class="method navigator-link" hash-for-method="reportTest1">reportTest1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Group_Demo" title="ui.ListenerDemoTest" class="method navigator-link" hash-for-method="launchApp">launchApp</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Group_Demo" title="ui.ReportTest" class="method navigator-link" hash-for-method="reportTest2">reportTest2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Group_Demo" title="ui.ListenerDemoTest" class="method navigator-link" hash-for-method="launchApp">launchApp</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Group_Demo" title="ui.ReportTest" class="method navigator-link" hash-for-method="reportTest3">reportTest3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Group_Demo -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Group_Demo" title="ui.ReportTest" class="method navigator-link" hash-for-method="reportTest4">reportTest4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Group_Demo -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -143,70 +134,42 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Group_Demo" class="panel Group_Demo">
-          <div class="suite-Group_Demo-class-failed">
+          <div class="suite-Group_Demo-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">ui.ListenerDemoTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">ui.ReportTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="launchApp">
-                  </a> <!-- launchApp -->
-                  <span class="method-name">launchApp</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at ui.ListenerDemoTest.launchApp(ListenerDemoTest.java:14)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <a name="reportTest1">
+                  </a> <!-- reportTest1 -->
+                  <span class="method-name">reportTest1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reportTest2">
+                  </a> <!-- reportTest2 -->
+                  <span class="method-name">reportTest2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reportTest3">
+                  </a> <!-- reportTest3 -->
+                  <span class="method-name">reportTest3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reportTest4">
+                  </a> <!-- reportTest4 -->
+                  <span class="method-name">reportTest4</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Group_Demo-class-failed -->
-          <div class="suite-Group_Demo-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">ui.ListenerDemoTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="launchApp">
-                  </a> <!-- launchApp -->
-                  <span class="method-name">launchApp</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at ui.ListenerDemoTest.launchApp(ListenerDemoTest.java:14)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="launchApp">
-                  </a> <!-- launchApp -->
-                  <span class="method-name">launchApp</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at ui.ListenerDemoTest.launchApp(ListenerDemoTest.java:14)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="launchApp">
-                  </a> <!-- launchApp -->
-                  <span class="method-name">launchApp</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at ui.ListenerDemoTest.launchApp(ListenerDemoTest.java:14)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Group_Demo-class-skipped -->
+          </div> <!-- suite-Group_Demo-class-passed -->
         </div> <!-- panel Group_Demo -->
         <div panel-name="test-xml-Group_Demo" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -223,7 +186,7 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Listener Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;ui.ListenerDemoTest&quot;/&gt;
+      &lt;class name=&quot;ui.ReportTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Listener Test --&gt;
 &lt;/suite&gt; &lt;!-- Group Demo --&gt;
@@ -265,26 +228,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'launchApp')
-data.setCell(0, 2, 'ui.ListenerDemoTest')
-data.setCell(0, 3, 2247);
+data.setCell(0, 1, 'reportTest1')
+data.setCell(0, 2, 'ui.ReportTest')
+data.setCell(0, 3, 7);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'launchApp')
-data.setCell(1, 2, 'ui.ListenerDemoTest')
-data.setCell(1, 3, 1120);
+data.setCell(1, 1, 'reportTest4')
+data.setCell(1, 2, 'ui.ReportTest')
+data.setCell(1, 3, 1);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'launchApp')
-data.setCell(2, 2, 'ui.ListenerDemoTest')
-data.setCell(2, 3, 1086);
+data.setCell(2, 1, 'reportTest2')
+data.setCell(2, 2, 'ui.ReportTest')
+data.setCell(2, 3, 1);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'launchApp')
-data.setCell(3, 2, 'ui.ListenerDemoTest')
-data.setCell(3, 3, 1059);
+data.setCell(3, 1, 'reportTest3')
+data.setCell(3, 2, 'ui.ReportTest')
+data.setCell(3, 3, 0);
 window.suiteTableData['Group_Demo']= { tableData: data, tableDiv: 'times-div-Group_Demo'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 9 ms</span>
               <div id="times-div-Group_Demo">
               </div> <!-- times-div-Group_Demo -->
             </div> <!-- times-div -->
@@ -295,6 +258,35 @@ return data;
             <span class="header-content">Reporter output for Group Demo</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">reportTest1</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Method name is -  reportTest1starting</span>
+                <span class="reporter-method-output">Status -  1</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">reportTest3</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Method name is -  reportTest3starting</span>
+                <span class="reporter-method-output">Status -  1</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">reportTest4</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Method name is -  reportTest4starting</span>
+                <span class="reporter-method-output">Status -  1</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">reportTest2</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Method name is -  reportTest2starting</span>
+                <span class="reporter-method-output">This is test2</span>
+                <span class="reporter-method-output">Status -  1</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Group_Demo" class="panel">
@@ -310,33 +302,23 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">ui.ListenerDemoTest</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">launchBrowser</span>
+              <div class="chronological-class-name">ui.ReportTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">reportTest1</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-              <div class="test-method">
-                <span class="method-name">launchApp</span>
-                <span class="method-start">3299 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">launchApp</span>
-                <span class="method-start">5549 ms</span>
+                <span class="method-name">reportTest2</span>
+                <span class="method-start">9 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">launchApp</span>
-                <span class="method-start">6636 ms</span>
+                <span class="method-name">reportTest3</span>
+                <span class="method-start">11 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">launchApp</span>
-                <span class="method-start">7696 ms</span>
+                <span class="method-name">reportTest4</span>
+                <span class="method-start">12 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-suite after">
-                <span class="method-name">clseBrowser</span>
-                <span class="method-start">9054 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
