@@ -3,6 +3,7 @@
 <suite name="Group Demo">
 	<listeners>
 		<listener class-name="common.Listeners" />
+		<listener class-name="common.RetryListener" />
 	</listeners>
 	<test name="Listener Test">
 		<classes>

@@ -7,7 +7,7 @@ import common.BaseTest;
 
 public class ListenerDemoTest extends BaseTest{
 	
-@Test	
+@Test(retryAnalyzer = common.Retry.class)
 	public void launchApp() {
 	
 		driver.get("https://www.ebay.com/");

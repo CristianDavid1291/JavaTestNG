@@ -3,6 +3,7 @@
 <suite name="Failed suite [Group Demo]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="common.Listeners"/>
+    <listener class-name="common.RetryListener"/>
   </listeners>
   <test thread-count="5" name="Listener Test(failed)">
     <classes>
